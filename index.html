@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
     <title>CV / Resume AI Generator</title>
 </head>
 <body>
+    <div class="container">
+    <header>
     <h1>
         CV / Resume Bullet Points AI Generator
     </h1>
     <h2>
         Let AI Rewrite Your Resume Like a Recruiter Would
     </h2>
-<main>
+    </header>
+<main class="requirements">
+    <div class="title"> 
 <!-- Job Title Input  -->
-    <label for="job-title"> Job Title </label>
-    <input type="text" id="title" placeholder="kkk"/>
-    <div class="hint">i.e: Software Engineer, Publicist, Educator, Graphic Designer</div>
-    <br>
+    <label for="job-title" class="job-title"> Job Title: </label>
+    <input type="text" class="title-input" id="title-input" placeholder="Enter Job Title (e.g Software Engineer, Publicist, Educator, Graphic Designer)" required/>
+    </div>
+    <div class="skills">
 <!-- Skills Input -->
-    <label for="skills-keywords">Skills / Keywords to Highlight</label>
-    <input type="text" id="skills" placeholder="jjj">
-    <div class="hint">i.e: Problem Solving, HTML, Canva, Excel, Project Management</div>
+    <label for="skills-keywords" class="skills-keywords">Skills / Keywords to Highlight</label>
+    <input type="text" class="skills-input" id="skills-input" placeholder="Enter Skill (e.g Problem Solving, HTML, Canva, Excel, Project Management)" required>
+    </div>
+    <button>Generate Bullet Point</button>
 <!-- Generated Bullet Point -->
     <div class="bullet hidden" id="bullet">This is the bullet point</div>
- <button>Generate Bullet Point</button>
+ 
 <!-- Stars Rating -->
 <div class="star-rating">
     <p>How Helpful Was This?</p>
@@ -43,7 +49,7 @@
     <a href="https://github.com/Itumeleng1307/cv-resume-ai-generator" target="_blank">open-sourced on Github</a>
     and is hosted on <a href="https://cv-resume-ai-generator.netlify.app/" target="_blank">Netlify</a>
 </footer>
-
-
+</div>
+<script src="/src/script.js"></script>
 </body>
 </html>
