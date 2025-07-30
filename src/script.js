@@ -1,3 +1,12 @@
+function displayBullet(response) {
+    new Typewriter("#bullet", {
+      strings: response.data.answer,
+      autoStart: true,
+      delay: 1,
+      cursor: "", 
+       });
+
+}
 
 function generateBullet(event) {
     event.preventDefault();
