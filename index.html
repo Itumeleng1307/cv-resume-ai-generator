@@ -17,17 +17,27 @@
     </h2>
     </header>
 <main class="requirements">
-    <div class="title"> 
+
+    <form id="title-skills-form" class="title-skills-form"> 
 <!-- Job Title Input  -->
-    <label for="job-title" class="job-title"> Job Title: </label>
-    <input type="text" class="title-input" id="title-input" placeholder="Enter Job Title (e.g Software Engineer, Publicist, Educator, Graphic Designer)" required/>
-    </div>
-    <div class="skills">
+    <label for="job-title" class="job-title"> Job Title </label>
+    <input type="text" class="title-input" id="title-input" placeholder="Enter Job Title (e.g Chef, Educator, Graphic Designer, Publicist, Software Engineer)"
+     autofocus
+     required
+     autocomplete="off"
+     class="instructions"
+     id="user-instructions"/>
 <!-- Skills Input -->
     <label for="skills-keywords" class="skills-keywords">Skills / Keywords to Highlight</label>
-    <input type="text" class="skills-input" id="skills-input" placeholder="Enter Skill (e.g Problem Solving, HTML, Canva, Excel, Project Management)" required>
-    </div>
-    <button>Generate Bullet Point</button>
+    <input type="text" class="skills-input" id="skills-input" placeholder="Enter Skills (e.g Communication Skills, Excel, HTML, Problem Solving, Project Management)" 
+     autofocus
+     required
+     autocomplete="off"
+     class="instructions"
+     id="user-instructions">
+    <input type="submit" class="generate-button" value="Generate Bullet Point"/>
+    </form>
+    
 <!-- Generated Bullet Point -->
     <div class="bullet hidden" id="bullet"></div>
 </main>
