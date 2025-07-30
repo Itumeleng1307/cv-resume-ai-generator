@@ -46,17 +46,24 @@ h2 {
     margin-right: 20px;
 }
 
+.skills-keywords,
+.skills-input {
+    margin-top: 30px;
+}
+
 .job-title,
 .skills-keywords {
+    text-align: center;
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
     padding: 5px;
-    
+    display: block; 
 }
 
 .title-input,
 .skills-input {
+    display: block;
     padding: 15px;
     border: 1px solid #cddb05;
     width: 80%;
@@ -65,33 +72,25 @@ h2 {
     line-height: 20px;
     color: #b46f3a;
     background: rgba(250, 247, 85, 0.789);
-    margin: 5px;
+    margin: 0 auto;
     
 }
 
-.title,
-.skills{
-    display: flex;
-    align-items: center; 
-    gap: 2px;
-    padding: 10px;
-}
-
-button {
+.generate-button {
     display: block;
     padding: 20px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 19px;
     border-radius: 10px;
     border: none;
     font-size: 20px;
-    width: 80%;
+    width: 50%;
     color: white;
     background: #e7dc0be4;
 }
 
-button:hover {
+.generate-button:hover {
     transition: all 0.5s ease;
     box-shadow: 0 0 10px #c7d507, 0 0 20px #dab89e, 0 0 30px #c69774;
     color: #f9f5ef;
@@ -130,7 +129,7 @@ footer {
 }
 
 /* HTML: <div class="loader"></div> */
-/* .loader {
+.loader {
     width: fit-content;
     font-size: 40px;
     font-family: system-ui, sans-serif;
@@ -144,8 +143,8 @@ footer {
     animation:
         l10-0 .8s linear infinite alternate,
         l10-1 4s linear infinite;
-} */
-/* 
+} 
+
 .loader:before {
     content: "Loading";
 }
@@ -160,4 +159,4 @@ footer {
     to {
         background-position-y: -.5em, 0
     }
-} */
+} 
