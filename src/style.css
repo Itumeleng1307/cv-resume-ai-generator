@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    margin: 120px auto;
+    margin: 20px auto;
     max-width: 800px;
     background: rgba(8, 8, 8, 0.63);
     border-radius: 6px;
@@ -33,6 +33,7 @@ h1:hover {
 
 h2 {
     font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .requirements {
@@ -41,21 +42,21 @@ h2 {
     box-shadow: 1px 1px 5px rgb(250, 246, 85);
     margin-bottom: 20px;
     border-radius: 10px;
-    padding: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .skills-keywords,
 .skills-input {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .job-title,
 .skills-keywords {
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     padding: 5px;
     display: block; 
@@ -66,10 +67,9 @@ h2 {
     display: block;
     padding: 15px;
     border: 1px solid #cddb05;
-    width: 80%;
+    width: 70%;
     font-size: 12px;
     border-radius: 50px;
-    line-height: 20px;
     color: #b46f3a;
     background: rgba(250, 247, 85, 0.789);
     margin: 0 auto;
@@ -78,14 +78,14 @@ h2 {
 
 .generate-button {
     display: block;
-    padding: 20px;
+    padding: 15px;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 19px;
     border-radius: 10px;
     border: none;
     font-size: 20px;
-    width: 50%;
+    width: 40%;
     color: white;
     background: #e7dc0be4;
 }
@@ -95,23 +95,28 @@ h2 {
     box-shadow: 0 0 10px #c7d507, 0 0 20px #dab89e, 0 0 30px #c69774;
     color: #f9f5ef;
     background: rgb(179, 164, 146);
-}
+    cursor: pointer;
+}S
 
-.star-rating {
-    text-align: center;
-    font-size: 14px;
-    border: 1px solid #c7d507;
-    border-radius: 5px;
-    width: 30%;
+.bullet {
+    font-family: "Rubik", sans-serif;
     padding: 20px;
-    margin-top: 30px;
+    margin: 0 auto;
+    color: white;
+    line-height: 1.5;
+    font-size: 15px;
+    border: 1px solid #c7d507;
+    border-radius: 6px;
     box-shadow: 4px 5px 5px rgb(250, 246, 85);
-  
-
+        
 }
 
-.star-rating:hover {
-    text-shadow: 0 0 10px #c7d507, 0 0 20px #dab89e, 0 0 30px #c69774;
+.hidden {
+    display: none;
+}
+
+.bullet strong{
+    color: #c7d507;
 }
 
 a {
@@ -131,12 +136,12 @@ footer {
 /* HTML: <div class="loader"></div> */
 .loader {
     width: fit-content;
-    font-size: 40px;
+    font-size: 30px;
     font-family: system-ui, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: #0000;
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 1px #cddb05;
     background:
         radial-gradient(0.71em at 50% 1em, #000 99%, #0000 101%) calc(50% - 1em) 1em/2em 200% repeat-x text,
         radial-gradient(0.71em at 50% -0.5em, #0000 99%, #000 101%) 50% 1.5em/2em 200% repeat-x text;
